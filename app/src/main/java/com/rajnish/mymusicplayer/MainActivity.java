@@ -3,10 +3,13 @@ package com.rajnish.mymusicplayer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Toast;
+
 
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
@@ -18,7 +21,7 @@ import com.rajnish.mymusicplayer.databinding.ActivityMainBinding;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.zip.Inflater;
+
 
 public class MainActivity extends AppCompatActivity {
 ActivityMainBinding binding;
@@ -30,12 +33,15 @@ ActivityMainBinding binding;
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+
+
         Dexter.withContext(this)
                 .withPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
                 .withListener(new PermissionListener() {
                     @Override
                     public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
-                        Toast.makeText(MainActivity.this, "HI", Toast.LENGTH_SHORT).show();
+
                         ArrayList<File> mySongs = fetchsong(Environment.getExternalStorageDirectory());
                         String [] items = new String[mySongs.size()];
                         for(int i=0;i<mySongs.size();i++){
@@ -44,6 +50,23 @@ ActivityMainBinding binding;
                         }
                         ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1,items);
                         binding.songlistview.setAdapter(adapter);
+
+                        binding.songlistview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                                Intent intent = new Intent(MainActivity.this,PlaySong.class);
+                                String cureenstsong = binding.songlistview.getItemAtPosition(i).toString();
+                                intent.putExtra("songList",mySongs);
+                                intent.putExtra("currentsong",cureenstsong);
+                                intent.putExtra("position",i);
+                                startActivity(intent);
+
+                            }
+                        });
+
+
+
+
 
                     }
 

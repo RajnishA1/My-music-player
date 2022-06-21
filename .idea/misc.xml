@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.226" />
+        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.226" />
+        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/ic_baseline_skip_next_24.xml" value="0.226" />
+        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/ic_baseline_skip_previous_24.xml" value="0.226" />
         <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/layout/activity_play_song.xml" value="0.23324275362318841" />
       </map>
     </option>
   </component>
