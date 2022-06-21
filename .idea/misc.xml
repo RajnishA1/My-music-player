@@ -3,16 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.226" />
-        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.226" />
-        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/ic_baseline_skip_next_24.xml" value="0.226" />
-        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/ic_baseline_skip_previous_24.xml" value="0.226" />
         <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.23324275362318841" />
-        <entry key="..\:/Users/Rajnish/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/layout/activity_play_song.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/Rja17/AndroidStudioProjects/My-music-player/app/src/main/res/layout/activity_main.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/Rja17/AndroidStudioProjects/My-music-player/app/src/main/res/layout/activity_play_song.xml" value="0.19067028985507245" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
