@@ -59,7 +59,7 @@ ActivityMainBinding binding;
                                 intent.putExtra("songList",mySongs);
                                 intent.putExtra("currentsong",cureenstsong);
                                 intent.putExtra("position",i);
-                               // startActivity(intent);
+                               startActivity(intent);
 
                             }
                         });
